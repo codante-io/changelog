@@ -71,9 +71,9 @@ export function Intro() {
   return (
     <>
       <div>
-        <Link href="/">
+        <a href="https://codante.io">
           <Logo className="inline-block w-auto h-8" />
-        </Link>
+        </a>
       </div>
       <h1 className="font-light text-white mt-14 font-display text-4xl/tight">
         Nosso <span className="text-sky-300">Changelog</span>
