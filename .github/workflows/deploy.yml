@@ -16,6 +16,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           script: |
+            rm -rf /var/www/codante-changelog
             git clone --depth 1 git@github.com:codante-io/changelog.git /var/www/codante-changelog
 
             cd /var/www/codante-changelog
