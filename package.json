@@ -1,6 +1,6 @@
 {
-  "name": "tailwindui-commit",
-  "version": "0.1.0",
+  "name": "codante-changelog",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

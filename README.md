@@ -1,4 +1,4 @@
-# Commit
+# Codante Changelog
 
 Commit is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
 
@@ -59,22 +59,6 @@ Each changelog entry should be separated by a horizontal rule (`---`) and should
 
 Your content...
 ```
-
-### Newsletter
-
-You can find the newsletter sign up form in `./src/components/SignUpForm.jsx` — if you have a newsletter you'll want to wire this up with whatever mailing list software you use to get it to actually work.
-
-### RSS feed
-
-The site will automatically generate an RSS feed at build time based on the content of `./src/pages/index.mdx`.
-
-You can edit the metadata for the feed (like the title and description) in `./src/lib/generateRssFeed.js`.
-
-Make sure to set your `NEXT_PUBLIC_SITE_URL` environment variable as the RSS feed needs this to generate the correct links for each entry.
-
-## License
-
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
 
 ## Learn more
 
