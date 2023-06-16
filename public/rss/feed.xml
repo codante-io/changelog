@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Codante</title>
+        <link>undefined</link>
+        <description>Changelog do Codante</description>
+        <lastBuildDate>Fri, 16 Jun 2023 12:03:03 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>Codante</title>
+            <url>undefined/favicon.svg</url>
+            <link>undefined</link>
+        </image>
+        <copyright>All rights reserved 2023</copyright>
+        <item>
+            <title><![CDATA[Login Redirect]]></title>
+            <link>undefined/#login-redirect</link>
+            <guid>undefined/#login-redirect</guid>
+            <pubDate>Thu, 15 Jun 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<div>Test</div><article><script type="text/metadata">{"id":"login-redirect","title":"Login Redirect","date":"2023-06-15T00:00Z"}</script>
+<div class="relative mt-8 overflow-hidden rounded-xl bg-gray-50 dark:bg-gray-900 [&amp;+*]:mt-8"><img alt="" loading="lazy" width="2052" height="1182" decoding="async" data-nimg="1" style="color:transparent" sizes="(min-width: 1280px) 36rem, (min-width: 1024px) 45vw, (min-width: 640px) 32rem, 95vw" srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230615.85b0bbc7.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230615.85b0bbc7.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230615.85b0bbc7.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230615.85b0bbc7.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230615.85b0bbc7.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230615.85b0bbc7.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230615.85b0bbc7.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230615.85b0bbc7.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230615.85b0bbc7.png&amp;w=3840&amp;q=75 3840w" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230615.85b0bbc7.png&amp;w=3840&amp;q=75"/><div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10 dark:ring-white/10"></div></div>
+
+<div><span class="bg-blue-200 text-blue-800  rounded-full p-1 px-2 text-xs undefined">Código</span></div>
+<p>A partir de agora, o redirecionamento de login é suportado. O usuário é redirecionado de volta para a página que estava tentando acessar antes de ser solicitado a fazer login.</p>
+<h3 id="-updates"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="#38BDF8" d="M5.338 9.805c.11.418.439.747.857.857C7.282 10.948 8 11.44 8 12s-.718 1.052-1.805 1.338c-.418.11-.747.439-.857.857C5.052 15.281 4.56 16 4 16s-1.052-.718-1.338-1.805a1.205 1.205 0 0 0-.856-.857C.718 13.052 0 12.56 0 12s.718-1.052 1.806-1.338c.417-.11.746-.439.856-.857C2.948 8.718 3.441 8 4 8c.56 0 1.052.718 1.338 1.805Z"></path><path fill="#7DD3FC" d="M12.717 2.432c.1.42.43.75.85.852C15.026 3.633 16 4.27 16 5s-.975 1.367-2.432 1.716c-.42.101-.75.432-.851.852C12.367 9.025 11.729 10 11 10c-.729 0-1.367-.975-1.716-2.432-.101-.42-.431-.75-.851-.852C6.975 6.367 6 5.73 6 5c0-.73.975-1.367 2.433-1.717.42-.1.75-.43.85-.85C9.634.974 10.272 0 11 0c.73 0 1.367.975 1.717 2.432Z"></path></svg> Updates</h3>
+<ul>
+<li>Redirecionamento de login suportado com um novo componente</li>
+<li><a href="https://github.com/codante-io/codante-io-front/pull/52">Pull Request #52</a></li>
+</ul>
+</article>]]></content:encoded>
+            <author>contato@codante.io (Roberto Cestari e Ícaro Harry)</author>
+        </item>
+        <item>
+            <title><![CDATA[Novo Workshop: Design para Devs]]></title>
+            <link>undefined/#novo-workshop-design-para-devs</link>
+            <guid>undefined/#novo-workshop-design-para-devs</guid>
+            <pubDate>Thu, 15 Jun 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<article><script type="text/metadata">{"id":"novo-workshop-design-para-devs","title":"Novo Workshop: Design para Devs","date":"2023-06-15T00:00Z"}</script>
+<div class="relative mt-8 overflow-hidden rounded-xl bg-gray-50 dark:bg-gray-900 [&amp;+*]:mt-8"><img alt="" loading="lazy" width="2212" height="1084" decoding="async" data-nimg="1" style="color:transparent" sizes="(min-width: 1280px) 36rem, (min-width: 1024px) 45vw, (min-width: 640px) 32rem, 95vw" srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230614.b98a3914.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230614.b98a3914.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230614.b98a3914.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230614.b98a3914.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230614.b98a3914.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230614.b98a3914.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230614.b98a3914.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230614.b98a3914.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230614.b98a3914.png&amp;w=3840&amp;q=75 3840w" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20230614.b98a3914.png&amp;w=3840&amp;q=75"/><div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10 dark:ring-white/10"></div></div>
+
+<div><span class="bg-purple-300 text-purple-800  rounded-full p-1 px-2 text-xs undefined">Conteúdo</span></div>
+<p>O primeiro Workshop do Codante está no ar!</p>
+<h3 id="-updates-1"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="#38BDF8" d="M5.338 9.805c.11.418.439.747.857.857C7.282 10.948 8 11.44 8 12s-.718 1.052-1.805 1.338c-.418.11-.747.439-.857.857C5.052 15.281 4.56 16 4 16s-1.052-.718-1.338-1.805a1.205 1.205 0 0 0-.856-.857C.718 13.052 0 12.56 0 12s.718-1.052 1.806-1.338c.417-.11.746-.439.856-.857C2.948 8.718 3.441 8 4 8c.56 0 1.052.718 1.338 1.805Z"></path><path fill="#7DD3FC" d="M12.717 2.432c.1.42.43.75.85.852C15.026 3.633 16 4.27 16 5s-.975 1.367-2.432 1.716c-.42.101-.75.432-.851.852C12.367 9.025 11.729 10 11 10c-.729 0-1.367-.975-1.716-2.432-.101-.42-.431-.75-.851-.852C6.975 6.367 6 5.73 6 5c0-.73.975-1.367 2.433-1.717.42-.1.75-.43.85-.85C9.634.974 10.272 0 11 0c.73 0 1.367.975 1.717 2.432Z"></path></svg> Updates</h3>
+<ul>
+<li>Novo workshop: Design para Devs</li>
+<li><a href="https://codante.io/workshops/design-para-devs">Link para o workshop</a></li>
+</ul></article>]]></content:encoded>
+            <author>contato@codante.io (Roberto Cestari e Ícaro Harry)</author>
+        </item>
+    </channel>
+</rss>
