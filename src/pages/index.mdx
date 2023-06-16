@@ -1,0 +1,40 @@
+import { SparkleIcon } from '@/components/SparkleIcon'
+import { Badge } from '@/components/Badge'
+import { generateRssFeed } from '@/lib/generateRssFeed'
+
+export async function getStaticProps() {
+  if (process.env.NODE_ENV === 'production') {
+    await generateRssFeed()
+  }
+  return { props: {} }
+}
+
+---
+
+![](@/images/20230615.png)
+
+## Login Redirect {{ date: '2023-06-15T00:00Z' }}
+
+<Badge type="Código" />
+
+A partir de agora, o redirecionamento de login é suportado. O usuário é redirecionado de volta para a página que estava tentando acessar antes de ser solicitado a fazer login.
+
+### <SparkleIcon /> Updates
+
+- Redirecionamento de login suportado com um novo componente
+- [Pull Request #52](https://github.com/codante-io/codante-io-front/pull/52)
+
+---
+
+![](@/images/20230614.png)
+
+## Novo Workshop: Design para Devs {{ date: '2023-06-15T00:00Z' }}
+
+<Badge type="Conteúdo" />
+
+O primeiro Workshop do Codante está no ar!
+
+### <SparkleIcon /> Updates
+
+- Novo workshop: Design para Devs
+- [Link para o workshop](https://codante.io/workshops/design-para-devs)
