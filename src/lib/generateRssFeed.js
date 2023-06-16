@@ -10,7 +10,7 @@ import Content from '@/pages/index.mdx'
 export async function generateRssFeed() {
   let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
   let author = {
-    name: 'Roberto Cestari',
+    name: 'Roberto Cestari e Ícaro Harry',
     email: 'contato@codante.io',
   }
 
@@ -20,8 +20,8 @@ export async function generateRssFeed() {
     author,
     id: siteUrl,
     link: siteUrl,
-    image: `${siteUrl}/favicon.ico`,
-    favicon: `${siteUrl}/favicon.ico`,
+    image: `${siteUrl}/favicon.svg`,
+    favicon: `${siteUrl}/favicon.svg`,
     copyright: `All rights reserved ${new Date().getFullYear()}`,
     feedLinks: {
       rss2: `${siteUrl}/rss/feed.xml`,
