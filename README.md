@@ -60,7 +60,7 @@ Each changelog entry should be separated by a horizontal rule (`---`) and should
 Your content...
 ```
 
-## Learn more
+## Learn more.
 
 To learn more about the technologies used in this site template, see the following resources:
 
