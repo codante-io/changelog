@@ -68,3 +68,20 @@ To learn more about the technologies used in this site template, see the followi
 - [Next.js](https://nextjs.org/docs) - the official Next.js documentation
 - [Motion One](https://motion.dev/) - the official Motion One documentation
 - [MDX](https://mdxjs.com/) - the official MDX documentation
+
+## Production deployment
+
+The changelog is exported to `out/` and served directly by nginx. Production does not run `next start`, PM2, or a service on port 3010. Images are emitted as static assets without Next.js image optimization.
+
+Pushes to `main` build the exact pushed commit in a new directory under `/var/www/codante-changelog-static/releases/`. The workflow uses the server's system Node.js 22/npm, the existing SSH secrets, and its existing GitHub deploy key. The deploy user must own the static deployment directory.
+
+Only a successful build containing the homepage, 404 page, and RSS feed can replace the `current` symlink. nginx must use `/var/www/codante-changelog-static/current` as its document root, with `try_files $uri $uri.html $uri/ =404`. A failed build leaves the published release untouched. An HTTPS check against the local nginx origin verifies the published homepage; on failure, the previous release is restored. Deployments are serialized and old releases are retained.
+
+To roll back, create a temporary symlink to a previous release's `out` directory and atomically replace `current` with `mv -Tf`. No nginx reload is required. Remove old build directories only after confirming they are no longer needed for rollback.
+
+For a local production build:
+
+```sh
+npm ci --include=dev
+NEXT_PUBLIC_SITE_URL=https://changelog.codante.io npm run build
+```
