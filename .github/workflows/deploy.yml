@@ -5,21 +5,47 @@ on:
     branches:
       - main
 
+concurrency:
+  group: changelog-production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy with pm2
-        uses: appleboy/ssh-action@master
+      - name: Build and publish static export
+        uses: appleboy/ssh-action@c4f70287fc37c43b14b30b407224bbbc8e8c6327
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
+          command_timeout: 20m
           script: |
-            rm -rf /var/www/codante-changelog
-            git clone --depth 1 git@github.com:codante-io/changelog.git /var/www/codante-changelog
-
-            cd /var/www/codante-changelog
-            npm install
-            npm run build
-            pm2 restart codante-changelog
+            bash -se <<'DEPLOY'
+            set -euo pipefail
+            export PATH=/usr/bin:/bin:/usr/sbin:/sbin
+            export NODE_ENV=production
+            export NEXT_TELEMETRY_DISABLED=1
+            export NEXT_PUBLIC_SITE_URL=https://changelog.codante.io
+            root=/var/www/codante-changelog-static
+            mkdir -p "$root/releases"
+            exec 9>"$root/.deploy.lock"
+            flock -w 1200 9
+            release=$(mktemp -d "$root/releases/${{ github.sha }}.XXXXXX")
+            git -C "$release" init --quiet
+            git -C "$release" remote add origin git@github.com:codante-io/changelog.git
+            git -C "$release" fetch --depth 1 origin '${{ github.sha }}'
+            git -C "$release" checkout --detach FETCH_HEAD
+            cd "$release"
+            nice -n 15 npm ci --include=dev --no-audit --no-fund
+            nice -n 15 npm run build
+            test -s out/index.html
+            test -s out/404.html
+            test -s out/rss/feed.xml
+            next="$root/.current-${{ github.run_id }}-${{ github.run_attempt }}"
+            ln -s "$release/out" "$next"
+            mv -Tf "$next" "$root/current"
+            DEPLOY
